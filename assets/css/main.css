@@ -1387,3 +1387,16 @@ section {
     margin-left: -100%
   }
 }
+
+#downloadButton {
+  padding: 10px 20px;
+  background-color: var(--color-default);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#downloadButton:hover {
+  background-color: var(--color-primary);
+}

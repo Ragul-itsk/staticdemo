@@ -11,6 +11,7 @@
   <link href="assets/css/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -84,7 +85,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100 client-icon-container">
-              <img src="assets/img/client/iot.png" alt="mrf">
+              <img src="assets/img/client/mabagas.jpg" alt="mrf">
             </div>
           </div>
 
@@ -112,6 +113,8 @@
                 interior work,
                 and wall cladding work.
               </p>
+              <button id="downloadButton"> Download PPT</button>
+              <!-- <a href="/assets/img/documents/JK-Engineering.pptx" download>s</a> -->
             </div>
           </div>
 
@@ -311,7 +314,7 @@
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/mrf.jpg" class="testimonial-img" alt="">
                   <h3>MRF</h3>
-                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                  <h4>OMM Engineering Works</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -450,5 +453,23 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+<script>
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    var fileUrl = "assets/img/documents/JK-Engineering.pptx";
+    
+    var link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "JK-Engineering.pptx";
+    
+    document.body.appendChild(link);
+    
+    link.click();
+    
+    document.body.removeChild(link);
+  });
+</script>
+
+
 
 </html>
